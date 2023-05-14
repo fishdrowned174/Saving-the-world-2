@@ -1,0 +1,66 @@
+/* Define colors */
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #8BC34A;
+  --background-color: #f2f2f2;
+  --text-color: #333;
+}
+
+/* Apply colors */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+  text-align: center
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+button {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+input[type="text"], input[type="password"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+/* Navigation bar */
+nav {
+  background-color: var(--primary-color);
+  color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: grey;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}

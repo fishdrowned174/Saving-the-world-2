@@ -1,0 +1,86 @@
+<!DOCTYPE.html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>Report</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2297/2297719.png">
+    </head>
+    <body>
+    
+      <h1>Report a Potential Scam</h1>
+    
+      
+    <form method="post" action="/success">
+      
+      <!-- Name field -->
+      <input autofocus autocomplete="off" type="text" placeholder="Your ID" id="name_id" name="name_id" required><p>  Please enter a unique id</p>
+      <br>
+      
+      <!-- Type field -->
+      <label for="type"></label>
+      <select name="type" id="type" required>
+        <option disabled selected>Type</option>
+        <option>Messages</option>
+        <option>Call</option>
+      </select>  
+      <br>
+      
+      <!-- Age field -->
+      <label for="age"></label>
+      <select name="age" id="type" required>
+        <option disabled selected>Your Age</option>
+        <option>0-17</option>
+        <option>18-65</option>
+        <option>65+</option>
+      </select>  
+        <br>
+      
+      <!-- country code field -->
+      <select name="ccode" id="ccode" required>
+        <option disabled selected>Country Code</option>
+        <option value="+54">Argentina (+54)</option>
+        <option value="+61">Australia (+61)</option>
+        <option value="+43">Austria (+43)</option>
+        <option value="+55">Brazil (+55)</option>
+        <option value="+86">China (+86)</option>
+        <option value="+20">Egypt (+20)</option>
+        <option value="+33">France (+33)</option>
+        <option value="+49">Germany (+49)</option>
+        <option value="+91">India (+91)</option>
+        <option value="+39">Italy (+39)</option>
+        <option value="+81">Japan (+81)</option>
+        <option value="+52">Mexico (+52)</option>
+        <option value="+64">New Zealand (+64)</option>
+        <option value="+351">Portugal (+351)</option>
+        <option value="+7">Russia (+7)</option>
+        <option value="+65">Singapore (+65)</option>
+        <option value="+34">Spain (+34)</option>
+        <option value="+46">Sweden (+46)</option>
+        <option value="+90">Turkey (+90)</option>
+        <option value="+971">UAE (+971)</option>
+        <option value="+44">UK (+44)</option>
+        <option value="+1">USA (+1)</option>
+      </select>  
+      
+      <!-- Scammer number field -->
+      <input type="text" id="info" name="info" placeholder="Scammer's Number">
+      <br>
+      
+      <!-- Description field -->
+      <textarea id="desc" name="desc" placeholder="Description of scam" rows="4" cols="50" required></textarea>
+      <br>
+      <br>
+      <button type="submit">Submit</button>    
+    </form> 
+    <br>
+      
+
+      
+    <!-- Home button -->
+    <form action="/index" method="get">
+      <button type="submit">Home</button>
+    </form>
+      
+  </body>
+</html>

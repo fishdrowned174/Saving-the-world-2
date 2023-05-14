@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>Scam finder</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2297/2297719.png">
+    </head>
+    <body>
+      <h1>Scam Report and Detection</h1> 
+      <h2>Your ID is {{ id }}</h2>
+      <h3>Please also visit <a href="https://www.scamalert.sg/?gclid=CjwKCAjw6vyiBhB_EiwAQJRopgm-S077tgsQItO-jX60Kee4UVywiZNbQ4kmHZotV53XeAFf-WmHCBoCscAQAvD_BwE" target="_blank">here</a> for current scams</h3>
+      <table class="center">  
+        <tr>
+          <td>
+            <form action="/report" method="get">
+             <button type="submit">Report a Scam</button>
+          </form>
+          </td>
+          <td><form action="/fraud" method="get">
+      <button type="submit">List of Scams</button>
+    </form></td>
+        </tr>
+      </table>
+ 
+    </body>
+</html>

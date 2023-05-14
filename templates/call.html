@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>Call Scams</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style1.css') }}">
+        <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2297/2297719.png">
+    </head>
+    <body>
+        <h1>Reported Call Scams</h1>
+        <table class="center">
+        <tr>
+          <th> Age Range of receiver</th>
+          <th> Country Code</th>
+          <th> Phone Number</th>
+          <th> Message</th>
+        </tr>
+          {% if results %}
+            {% for result in results %}
+              <tr>
+                <td>{{  result[0] }}</td>
+                <td>{{  result[1] }}</td>
+                <td>{{  result[2] }}</td>
+                <td>{{  result[3] }}</td>
+              </tr>
+            {% endfor %}
+          {% endif %}
+        </table>
+        <br>
+        <form action="/fraud" method="get">
+          <button type="submit">Back</button>
+        </form>
+        <br>
+        <form action="/index" method="get">
+          <button type="submit">Home</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE.html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2297/2297719.png">
+
+  <title>Types of Online Scams</title>
+</head>
+    <body>
+      <h1>Recently Reported Scams</h1>
+      <br>
+      <table class="center">  
+        <tr>
+          <th>Call Scams</th>
+          <th>Messages Scams</th>
+        </tr>
+        <tr>
+          <td>
+            <form action="/call" method="get">
+      <button type="submit">Call Scams</button>
+            </form>
+          </td>
+          <td>
+            <form action="/message" method="get">
+      <button type="submit">Message Scams</button>
+            </form>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <form action="/index" method="get">
+        <button type="submit">Home</button>
+      </form>
+  
+</body>
+</html>

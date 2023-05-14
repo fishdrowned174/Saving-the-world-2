@@ -1,0 +1,13 @@
+1 0-17 Call +54 12345678 a  
+2 18-65 Call +43 90608816 valorant  
+3 18-65 Call +86 90608816 valorant  
+5 65+ Message +55 91994198 dota 2  
+6 18-65 Message +81 91235292 apex legends  
+7 65+ Call +90 82850123 fortnite  
+8 65+ Messages +34 12341234 heheheha  
+9 0-17 Call +971 90016332 HEHEHEHAW  
+
+1023 18-65 Messages +43 12345678 hi  
+1 0-17 Messages +54 12345678 A scam that asks for phone number  
+1 0-17 Messages +54 12345678 A scam that asks for phone number  
+10 0-17 Messages +54 12345678 A scam that asks for phone number  
